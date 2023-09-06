@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #282c33;
+	--primary-text: #ffffff;
+	--secondary-text: #abb2bf;
+}
+
+body {
+	color: var(--primary-text);
+	background: var(--background);
+	width: 1280px;
+	margin: auto;
+	font-family: 'Fira Code';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
