@@ -13,9 +13,17 @@ body {
 	background: var(--background);
 	width: 1280px;
 	margin: auto;
-	font-family: 'Fira Code';
 	font-size: 16px;
-	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+
+	transition-delay: 1s; /* delays for 1 second */
+	-webkit-transition-delay: 1s; /* for Safari & Chrome */
+}
+
+header span {
+	color: #c778dd;
+}
+header .active {
+	color: white;
 }
