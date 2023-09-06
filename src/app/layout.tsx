@@ -25,16 +25,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						<h1>NekooiTine</h1>
 					</div>
 					<div className="flex items-start gap-8">
-						<Link className={`${path == "/" ? "active" : ""} flex items-start hover:text-pink-800 hover:transition-colors duration-700 text-gray-500`} href={"/"}>
+						<Link className={`${path == "/" ? "active" : "hover:text-fuchsia-400 hover:transition-colors duration-700"} flex items-start text-gray-500`} href={"/"}>
 							<span>#</span>home
 						</Link>
-						<Link className={`${path == "/test" ? "active" : ""} flex items-start hover:text-pink-800 hover:transition-colors duration-700 text-gray-500`} href={"/test"}>
+						<Link className={`${path == "/test" ? "active" : "hover:text-fuchsia-400 hover:transition-colors duration-700"} flex items-start text-gray-500`} href={"/test"}>
 							<span>#</span>works
 						</Link>
-						<Link className={`${path == "/test1" ? "active" : ""} flex items-start hover:text-pink-800 hover:transition-colors duration-700 text-gray-500`} href={"/test2"}>
+						<Link className={`${path == "/test1" ? "active" : "hover:text-fuchsia-400 hover:transition-colors duration-700"} flex items-start text-gray-500`} href={"/test2"}>
 							<span>#</span>about-me
 						</Link>
-						<Link className={`${path == "/test2" ? "active" : ""} flex items-start hover:text-pink-800 hover:transition-colors duration-700 text-gray-500`} href={"/test3"}>
+						<Link className={`${path == "/test2" ? "active" : "hover:text-fuchsia-400 hover:transition-colors duration-700"} flex items-start text-gray-500`} href={"/test3"}>
 							<span>#</span>contacts
 						</Link>
 					</div>
