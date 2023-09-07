@@ -1,11 +1,8 @@
-"use client";
-
 import "./globals.css";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import Header from "./components/Header";
 
 const fira = Fira_Code({ subsets: ["latin"] });
 
@@ -15,30 +12,19 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-	const path = usePathname();
 	return (
 		<html lang="en">
 			<body className={fira.className}>
-				<header className="sticky flex pt-8 pb-2 justify-between items-end">
-					<div className="flex items-center gap-2">
-						<Image alt="Logo" src="/logo.svg" width={16} height={16} />
-						<h1>NekooiTine</h1>
+				<Header />
+				<div className="media fixed top-0 inline-flex flex-col items-center gap-2 left-36">
+					<Image alt="line" src="/line_10_stroke.svg" width={2} height={191} />
+					<div className="social flex flex-col items-center gap-2">
+						<Image alt="github" src="/github.svg" width={32} height={32} />
+						<Image alt="facebook" src="/facebook.svg" width={32} height={32} />
+						<Image alt="linkedin" src="/linkedin.svg" width={32} height={32} />
+						<Image alt="discord" src="/discord.svg" width={32} height={32} />
 					</div>
-					<div className="flex items-start gap-8">
-						<Link className={`${path == "/" ? "active" : "hover:text-fuchsia-400 hover:transition-colors duration-700"} flex items-start text-gray-500`} href={"/"}>
-							<span>#</span>home
-						</Link>
-						<Link className={`${path == "/test" ? "active" : "hover:text-fuchsia-400 hover:transition-colors duration-700"} flex items-start text-gray-500`} href={"/test"}>
-							<span>#</span>works
-						</Link>
-						<Link className={`${path == "/test1" ? "active" : "hover:text-fuchsia-400 hover:transition-colors duration-700"} flex items-start text-gray-500`} href={"/test2"}>
-							<span>#</span>about-me
-						</Link>
-						<Link className={`${path == "/test2" ? "active" : "hover:text-fuchsia-400 hover:transition-colors duration-700"} flex items-start text-gray-500`} href={"/test3"}>
-							<span>#</span>contacts
-						</Link>
-					</div>
-				</header>
+				</div>
 				{children}
 			</body>
 		</html>

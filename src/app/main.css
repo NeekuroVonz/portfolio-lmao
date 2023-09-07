@@ -1,10 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
-p {
-	font-size: 32px;
-	font-weight: 600;
+.first {
+	margin-top: 62px;
+	.group-1 {
+		padding-top: 74px;
+		.title {
+			font-size: 32px;
+			font-weight: 600;
+		}
+		.description {
+			font-weight: 400;
+			line-height: 25px;
+		}
+		.button {
+			gap: 10px;
+		}
+	}
 }
