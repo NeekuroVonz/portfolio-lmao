@@ -16,6 +16,10 @@ const config: Config = {
       colors: {
         'main-pink': '#c778dd',
         'main-gray': '#abb2bf',
+        'main-background': '#282c33',
+      },
+      gap: {
+        'main-gap': '10px',
       }
     },
   },

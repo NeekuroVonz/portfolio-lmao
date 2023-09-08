@@ -10,8 +10,33 @@
 			font-weight: 400;
 			line-height: 25px;
 		}
-		.button {
-			gap: 10px;
+	}
+	.group-2 {
+		.dots {
+			width: 100px;
+			height: 100px;
+		}
+	}
+	.current-work {
+		width: 402px;
+	}
+}
+.quote {
+	.name {
+		right: -1px;
+		top: 85px;
+		& + .quote-mark {
+			bottom: -14px;
+			right: 12px;
+		}
+	}
+}
+.projects {
+	margin-top: 137px;
+	h2 {
+		width: 701px;
+		div {
+			font-size: 32px;
 		}
 	}
 }

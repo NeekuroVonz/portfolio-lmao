@@ -4,7 +4,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function Header() {
+export default function Header() { 
 	const path = usePathname();
 	return (
 		<header className="sticky flex pt-8 pb-2 justify-between items-end">
