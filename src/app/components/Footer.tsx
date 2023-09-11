@@ -14,12 +14,12 @@ export default function Footer() {
 									<Image alt="logo" src="logo.svg" width={16} height={16} />
 									<p>NekooiTine</p>
 								</div>
-								<p className="text-base/none text-main-gray font-normal">hungngochung2607@gmail.com</p>
+								<p className="text-base/normal text-main-gray font-normal">hungngochung2607@gmail.com</p>
 							</div>
 							<p className="font-normal">Web designer and full-stack developer</p>
 						</div>
 						<div className="flex items-start flex-col gap-3">
-							<p className="text-2xl/none">Media</p>
+							<p className="text-2xl/normal">Media</p>
 							<div className="flex gap-3">
 								<Link href={"https://github.com/NeekuroVonz"}>
 									<Image alt="github" src="/github.svg" width={32} height={32} />
