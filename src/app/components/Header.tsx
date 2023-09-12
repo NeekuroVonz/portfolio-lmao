@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Media from "./Media";
 
-export default function Header() { 
+export default function Header() {
 	const path = usePathname();
 	return (
 		<header className="sticky flex pt-8 pb-2 justify-between items-end">
@@ -16,16 +17,17 @@ export default function Header() {
 				<Link className={`${path == "/" ? "text-white" : "hover:text-fuchsia-400 hover:transition-colors duration-700 text-main-gray"} flex items-start `} href={"/"}>
 					<span className="text-main-pink">#</span>home
 				</Link>
-				<Link className={`${path == "/test" ? "text-white" : "hover:text-fuchsia-400 hover:transition-colors duration-700 text-main-gray"} flex items-start`} href={"/test"}>
+				<Link className={`${path == "/works" ? "text-white" : "hover:text-fuchsia-400 hover:transition-colors duration-700 text-main-gray"} flex items-start`} href={"/works"}>
 					<span className="text-main-pink">#</span>works
 				</Link>
-				<Link className={`${path == "/test1" ? "text-white" : "hover:text-fuchsia-400 hover:transition-colors duration-700 text-main-gray"} flex items-start`} href={"/test2"}>
+				<Link className={`${path == "/about-me" ? "text-white" : "hover:text-fuchsia-400 hover:transition-colors duration-700 text-main-gray"} flex items-start`} href={"/about-me"}>
 					<span className="text-main-pink">#</span>about-me
 				</Link>
-				<Link className={`${path == "/test2" ? "text-white" : "hover:text-fuchsia-400 hover:transition-colors duration-700 text-main-gray"} flex items-start`} href={"/test3"}>
+				<Link className={`${path == "/contacts" ? "text-white" : "hover:text-fuchsia-400 hover:transition-colors duration-700 text-main-gray"} flex items-start`} href={"/contacts"}>
 					<span className="text-main-pink">#</span>contacts
 				</Link>
 			</div>
+			<Media />
 		</header>
 	);
 }

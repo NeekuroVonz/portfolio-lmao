@@ -18,7 +18,7 @@
 .quote {
 	.name {
 		right: -1px;
-		top: 117px;
+		top: 85px;
 		& + .quote-mark {
 			bottom: -14px;
 			right: 12px;
@@ -36,6 +36,24 @@
 }
 .skills {
 	margin-top: 106px;
+	h2 {
+		width: 701px;
+		div {
+			font-size: 32px;
+		}
+	}
+}
+.about-me {
+	margin-top: 112px;
+	h2 {
+		width: 701px;
+		div {
+			font-size: 32px;
+		}
+	}
+}
+.contacts {
+	margin-top: 112px;
 	h2 {
 		width: 701px;
 		div {

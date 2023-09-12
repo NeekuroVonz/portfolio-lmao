@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "./main.css";
 import Dots from "./utils/Dots";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -31,7 +32,7 @@ export default function Home() {
 			</div>
 
 			<div className="w-full text-center">
-				<div className="relative quote inline-flex p-12 items-start gap-main-gap border border-solid border-main-gray bg-main-background mt-28">
+				<div className="relative quote inline-flex p-8 items-start gap-main-gap border border-solid border-main-gray bg-main-background mt-28">
 					<div className="quote-mark absolute flex py-1 px-2 flex-col items-start bg-main-background -top-4 left-4">
 						<Image className="flex" alt="quote" src="/main/quotation_mark.svg" width={25.472} height={20.704} />
 					</div>
@@ -51,9 +52,7 @@ export default function Home() {
 						<div className="flex items-start">
 							<span className="text-main-pink">#</span>projects
 						</div>
-						<svg xmlns="http://www.w3.org/2000/svg" width="511" height="2" viewBox="0 0 511 2" fill="none">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M511 1.5H0V0.5H511V1.5Z" fill="#C778DD" />
-						</svg>
+						<Image alt="pink_line" src="/main/pink_title_line.svg" width={511} height={2} />
 					</h2>
 					<p className="self-center">View all ~~&gt;</p>
 				</div>
@@ -150,26 +149,23 @@ export default function Home() {
 						<div className="flex items-start">
 							<span className="text-main-pink">#</span>skills
 						</div>
-						<svg xmlns="http://www.w3.org/2000/svg" width="511" height="2" viewBox="0 0 511 2" fill="none">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M511 1.5H0V0.5H511V1.5Z" fill="#C778DD" />
-						</svg>
+						<Image alt="pink_line" src="/main/pink_title_line.svg" width={511} height={2} />
 					</h2>
-					<p className="self-center">View all ~~&gt;</p>
 				</div>
 				<div className="flex">
-					<div className="decoration w-96 h-96 relative">
+					<div className="decoration h-96 relative w-1/2">
 						<div className="w-24 h-24 absolute border border-solid border-main-gray" style={{ left: "31rem", top: "2rem" }}></div>
 						<div className="w-20 h-20 absolute border border-solid border-main-gray" style={{ left: "28rem", top: "15rem" }}></div>
 						<Dots style={{ width: "75px", height: "75px", bottom: "17rem", left: "5rem" }} />
 						<Dots style={{ width: "75px", height: "75px", left: "18rem", top: "8rem" }} />
 						<Image className="square-pink absolute z-0 top-44 left-12" alt="deco" src="/main/square_pink.svg" width={155} height={155} />
 					</div>
-					<div className="tech w-full text-right">
+					<div className="tech flex flex-wrap content-center justify-end w-1/2 just gap-4">
 						<div className="languages inline-flex py-2 flex-col items-start gap-2 border border-solid border-main-gray">
 							<div className="title flex px-2 items-start self-stretch">
 								<p>Languages</p>
 							</div>
-							<div className="h-px bg-main-gray" style={{ width: "178px" }}></div>
+							<div className="h-px bg-main-gray" style={{ width: "100%" }}></div>
 							<div className="flex px-2 flex-col items-start gap-2 font-normal text-main-gray">
 								<div className="flex items-start gap-2">
 									<span>TypeScript</span>
@@ -189,7 +185,7 @@ export default function Home() {
 							<div className="title flex px-2 items-start self-stretch">
 								<p>Databases</p>
 							</div>
-							<div className="h-px bg-main-gray" style={{ width: "178px" }}></div>
+							<div className="h-px bg-main-gray" style={{ width: "100%" }}></div>
 							<div className="flex px-2 flex-col items-start gap-2 font-normal text-main-gray">
 								<div className="flex items-start gap-2">
 									<span>MySQL</span>
@@ -208,7 +204,7 @@ export default function Home() {
 							<div className="title flex px-2 items-start self-stretch">
 								<p>Tools</p>
 							</div>
-							<div className="h-px bg-main-gray" style={{ width: "178px" }}></div>
+							<div className="h-px bg-main-gray" style={{ width: "100%" }}></div>
 							<div className="flex px-2 flex-col items-start gap-2 font-normal text-main-gray">
 								<div className="flex items-start gap-2">
 									<span>VSCode</span>
@@ -226,12 +222,11 @@ export default function Home() {
 								</div>
 							</div>
 						</div>
-						<br /><br />
 						<div className="other inline-flex py-2 flex-col items-start gap-2 border border-solid border-main-gray">
 							<div className="title flex px-2 items-start self-stretch">
 								<p>Other</p>
 							</div>
-							<div className="h-px bg-main-gray" style={{ width: "178px" }}></div>
+							<div className="h-px bg-main-gray" style={{ width: "100%" }}></div>
 							<div className="flex px-2 flex-col items-start gap-2 font-normal text-main-gray">
 								<div className="flex items-start gap-2">
 									<span>HTML</span>
@@ -254,7 +249,7 @@ export default function Home() {
 							<div className="title flex px-2 items-start self-stretch">
 								<p>Frameworks</p>
 							</div>
-							<div className="h-px bg-main-gray" style={{ width: "178px" }}></div>
+							<div className="h-px bg-main-gray" style={{ width: "100%" }}></div>
 							<div className="flex px-2 flex-col items-start gap-2 font-normal text-main-gray">
 								<div className="flex items-start gap-2">
 									<span>React</span>
@@ -269,6 +264,79 @@ export default function Home() {
 									<span>Flask</span>
 									<span>SpringBoot</span>
 								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div className="about-me w-full">
+				<div className="head flex justify-between">
+					<h2 className="flex items-center gap-4">
+						<div className="flex items-start">
+							<span className="text-main-pink">#</span>about-me
+						</div>
+						<Image alt="pink_line" src="/main/pink_title_line.svg" width={511} height={2} />
+					</h2>
+				</div>
+				<div className="flex">
+					<div className="description relative w-1/2 mt-6">
+						<p className="font-normal text-main-gray" style={{ lineHeight: "26px" }}>
+							Hello, i’m NekooiTine (Nguyen Hung)!
+							<br />
+							<br />
+							I’m a self-taught full-stack developer based in Ho Chi Minh City, Vietnam. I can develop entire websites (backend - frontend - deploy) from scratch and raise them into modern user-friendly web experiences.
+							<br />
+							<br />
+							Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks.
+						</p>
+						<button className="inline-flex py-2 px-4 items-start border border-solid border-main-pink mt-7" style={{ gap: "10px" }}>
+							Read more -&gt;
+						</button>
+					</div>
+					<div className="image relative flex items-end flex-col w-1/2">
+						<Image className="border-b border-main-pink" alt="pic3" src="/main/pic3.png" width={430} height={197} style={{ transform: "scaleX(-1)" }} />
+						<Dots style={{ height: "100px", width: "100px", bottom: "17.5rem", right: "22.5rem" }} />
+						<Dots style={{ height: "70px", width: "100px", bottom: "4.5rem", right: "0.5rem" }} />
+					</div>
+				</div>
+			</div>
+
+			<div className="contacts w-full mb-36">
+				<div className="head flex justify-between">
+					<h2 className="flex items-center gap-4">
+						<div className="flex items-start">
+							<span className="text-main-pink">#</span>contacts
+						</div>
+						<Image alt="pink_line" src="/main/pink_title_line.svg" width={511} height={2} />
+					</h2>
+				</div>
+				<div className="flex">
+					<div className="description relative w-1/2 mt-11">
+						<p className="font-normal text-main-gray" style={{ lineHeight: "26px" }}>
+							I’m interested in freelance opportunities. However,
+							<br />
+							if you have other request or question, don’t
+							<br />
+							hesitate to contact me
+						</p>
+					</div>
+					<div className="box relative flex items-end flex-col w-1/2">
+						<div className="w-52 inline-flex p-4 flex-col items-start gap-4 border border-solid border-main-gray">
+							<p>Message me here</p>
+							<div className="mess flex flex-col items-start gap-2">
+								<Link className="flex items-center gap-[5px]" href={"https://www.facebook.com/ngochung.nguyentran.5/"}>
+									<Image alt="facebook" src="/facebook.svg" width={32} height={32} />
+									<p className="text-main-gray font-normal">Nguyen Hung</p>
+								</Link>
+								<Link className="flex items-center gap-[5px]" href={"https://www.linkedin.com/in/nekooitine/"}>
+									<Image alt="linkedin" src="/linkedin.svg" width={32} height={32} />
+									<p className="text-main-gray font-normal">Nguyen Hung</p>
+								</Link>
+								<Link className="flex items-center gap-[5px]" href={"https://discordlookup.com/user/340461645732249610"}>
+									<Image alt="discord" src="/discord.svg" width={32} height={32} />
+									<p className="text-main-gray font-normal">nekooitine</p>
+								</Link>
 							</div>
 						</div>
 					</div>

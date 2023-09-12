@@ -20,7 +20,13 @@ const config: Config = {
       },
       gap: {
         'main-gap': '10px',
-      }
+      },
+      screens: {
+        'desktop': "1920px",
+        'laptop': "1440px",
+        'tablet': "1024px",
+        'mobile': "860px",
+      },
     },
   },
   plugins: [],
