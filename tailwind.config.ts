@@ -10,8 +10,11 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      backgroundColor: {
+        'primary-hover': 'rgba(199, 120, 221, 0.20)',
+        'secondary-hover': 'rgba(171, 178, 191, 0.20);',
       },
       colors: {
         'main-pink': '#c778dd',

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 export default function Footer() {
 	return (
@@ -21,18 +21,7 @@ export default function Footer() {
 						<div className="flex items-start flex-col gap-3">
 							<p className="text-2xl/normal">Media</p>
 							<div className="flex gap-3">
-								<Link href={"https://github.com/NeekuroVonz"}>
-									<Image alt="github" src="/github.svg" width={32} height={32} />
-								</Link>
-								<Link href={"https://www.facebook.com/ngochung.nguyentran.5/"}>
-									<Image alt="facebook" src="/facebook.svg" width={32} height={32} />
-								</Link>
-								<Link href={"https://www.linkedin.com/in/nekooitine/"}>
-									<Image alt="linkedin" src="/linkedin.svg" width={32} height={32} />
-								</Link>
-								<Link href={"https://discordlookup.com/user/340461645732249610"}>
-									<Image alt="discord" src="/discord.svg" width={32} height={32} />
-								</Link>
+								<SocialMedia />
 							</div>
 						</div>
 					</div>

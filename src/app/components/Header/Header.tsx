@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Media from "./Media";
+import Media from "../Media";
 
 export default function Header() {
 	const path = usePathname();
 	return (
-		<header className="sticky flex pt-8 pb-2 justify-between items-end">
+		<header className="sticky top-0 z-20 bg-main-background flex pt-8 pb-2 justify-between items-end">
 			<div className="flex items-center gap-2">
 				<Image alt="Logo" src="/logo.svg" width={16} height={16} />
 				<h1>NekooiTine</h1>
