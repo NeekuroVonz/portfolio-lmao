@@ -22,9 +22,9 @@ export default function Home() {
 					</p>
 					<Button url="/contacts" color="pink" name="Contact me!!" />
 				</div>
-				<div className="group-2 ml-48 -mt-10 w-full relative">
-					<Image className="square-pink absolute z-0 top-24 -left-24" alt="deco" src="/main/square_pink.svg" width={155} height={155} />
-					<Image className="relative z-10" alt="mypic" src="/main/pic.png" width={400} height={386} />
+				<div className="group-2 max-desktop:ml-48 max-laptop:ml-0 -mt-10 w-full relative">
+					<Image className="square-pink absolute z-0 top-24 max-laptop:top-40 -left-24" alt="deco" src="/main/square_pink.svg" width={155} height={155} />
+					<Image className="relative z-10 max-laptop:w-[300px]" alt="mypic" src="/main/pic.png" width={400} height={386} style={{ width: "auto", height: "auto" }} priority={true} />
 					<div className="current-work flex p-2 items-center border border-solid border-main-gray bg-main-background gap-main-gap">
 						<div className="square w-4 h-4 flex-shrink-0 border border-solid border-main-pink bg-main-pink"></div>
 						<p className="content text-main-gray">

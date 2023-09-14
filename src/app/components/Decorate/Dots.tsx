@@ -11,7 +11,7 @@ export default function Dots({ style }: { style: React.CSSProperties | undefined
 				{array.map(() => (
 					<div className="flex justify-between items-start self-stretch" key={v4()}>
 						{array.map(() => (
-							<Image alt="dot" src="/main/dot.svg" width={4} height={4} key={v4()}/>
+							<Image alt="dot" src="/main/dot.svg" width={4} height={4} key={v4()} />
 						))}
 					</div>
 				))}

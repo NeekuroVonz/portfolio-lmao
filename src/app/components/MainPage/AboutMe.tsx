@@ -7,10 +7,10 @@ import { motion } from "framer-motion";
 export default function AboutMe() {
 	return (
 		<>
-			<motion.div className="about-me w-full" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+			<motion.div className="about-me w-full" transition={{ duration: 1, delay: 0.5 }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
 				<div className="head flex justify-between">
 					<h2 className="flex items-center gap-4">
-						<div className="flex items-start">
+						<div className="flex items-start text-[32px]">
 							<span className="text-main-pink">#</span>about-me
 						</div>
 						<Image alt="pink_line" src="/main/pink_title_line.svg" width={511} height={2} />
@@ -30,7 +30,7 @@ export default function AboutMe() {
 						<Button url="#" color="pink" name="Live &lt;~&gt;" />
 					</div>
 					<div className="image relative flex items-end flex-col w-1/2">
-						<Image className="border-b border-main-pink" alt="pic3" src="/main/pic3.png" width={430} height={197} style={{ transform: "scaleX(-1)" }} />
+						<Image className="border-b border-main-pink" alt="pic3" src="/main/pic3.png" width={430} height={197} style={{ transform: "scaleX(-1)", width: "430px", height: "auto" }} />
 						<Dots style={{ height: "100px", width: "100px", bottom: "17.5rem", right: "22.5rem" }} />
 						<Dots style={{ height: "70px", width: "100px", bottom: "4.5rem", right: "0.5rem" }} />
 					</div>

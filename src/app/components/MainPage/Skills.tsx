@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 export default function Skills() {
 	return (
 		<>
-			<motion.div className="skills w-full" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+			<motion.div className="skills w-full" transition={{ duration: 1, delay: 0.5 }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
 				<div className="head flex justify-between">
 					<h2 className="flex items-center gap-4">
-						<div className="flex items-start">
+						<div className="flex items-start text-[32px]">
 							<span className="text-main-pink">#</span>skills
 						</div>
 						<Image alt="pink_line" src="/main/pink_title_line.svg" width={511} height={2} />

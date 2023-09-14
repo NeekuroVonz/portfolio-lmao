@@ -11,7 +11,7 @@ export default function Footer() {
 						<div className="flex items-start flex-col gap-4">
 							<div className="flex items-center gap-6 self-stretch">
 								<div className="flex items-center gap-2">
-									<Image alt="logo" src="logo.svg" width={16} height={16} />
+									<Image alt="logo" src="logo.svg" width={16} height={16} style={{ width: "16px", height: "16px" }} />
 									<p>NekooiTine</p>
 								</div>
 								<p className="text-base/normal text-main-gray font-normal">hungngochung2607@gmail.com</p>

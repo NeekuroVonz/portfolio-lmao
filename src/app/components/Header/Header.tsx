@@ -10,7 +10,7 @@ export default function Header() {
 	return (
 		<header className="sticky top-0 z-20 bg-main-background flex pt-8 pb-2 justify-between items-end">
 			<div className="flex items-center gap-2">
-				<Image alt="Logo" src="/logo.svg" width={16} height={16} />
+				<Image alt="Logo" src="/logo.svg" width={16} height={16} style={{ width: "16px", height: "16px" }} />
 				<h1>NekooiTine</h1>
 			</div>
 			<div className="flex items-start gap-8">
