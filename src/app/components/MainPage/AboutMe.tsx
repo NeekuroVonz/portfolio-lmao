@@ -30,7 +30,7 @@ export default function AboutMe() {
 						<Button url="#" color="pink" name="Live &lt;~&gt;" />
 					</div>
 					<div className="image relative flex items-end flex-col w-1/2">
-						<Image className="border-b border-main-pink" alt="pic3" src="/main/pic3.png" width={430} height={197} style={{ transform: "scaleX(-1)", width: "430px", height: "auto" }} />
+						<Image className="border-b border-main-pink" alt="pic3" src="/main/pic3.png" width={430} height={361} style={{ transform: "scaleX(-1)", width: "430px", height: "361px"}} />
 						<Dots style={{ height: "100px", width: "100px", bottom: "17.5rem", right: "22.5rem" }} />
 						<Dots style={{ height: "70px", width: "100px", bottom: "4.5rem", right: "0.5rem" }} />
 					</div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const arrayProj = [
 	<div key={1} className="flex flex-col items-start border border-solid border-main-gray">
@@ -24,7 +24,7 @@ const arrayProj = [
 		</div>
 	</div>,
 	<div key={2} className="flex flex-col items-start border border-solid border-main-gray">
-		<Image className="border-b border-solid border-main-gray " alt="protectx" src="/projects/protectx.jpg" width={330.579} height={201} style={{ width: "330.579px", height: "179px" }} />
+		<Image className="border-b border-solid border-main-gray " alt="protectx" src="/projects/protectx.jpg" priority={true} width={330.579} height={201} style={{ width: "330.579px", height: "179px" }} />
 		<div className="tech flex p-2 items-start gap-2 self-stretch font-normal text-main-gray">
 			<span>React</span>
 			<span>Express</span>
@@ -82,19 +82,13 @@ const arrayProj = [
 ];
 
 export default function Project() {
-	const [screenWidth, setScreenWidth] = useState(0);
-	useEffect(() => {
-		// Update screen dimensions when the window is resized
-		const handleResize = () => {
-			setScreenWidth(window.innerWidth);
-		};
-		// Attach the event listener
-		window.addEventListener("resize", handleResize);
+	const [screen, setScreen] = useState(0);
 
-		// Clean up the event listener on component unmount
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
+	useEffect(() => {
+		setScreen(window.innerWidth);
+		window.addEventListener("resize", () => {
+			setScreen(window.innerWidth);
+		});
 	}, []);
 
 	return (
@@ -111,7 +105,7 @@ export default function Project() {
 						View all ~~&gt;
 					</Link>
 				</div>
-				<div className="content inline-flex items-start gap-4 mt-12">{arrayProj.slice(0, screenWidth < 1440 ? 3 : 4).map((html) => html)}</div>
+				<div className="content inline-flex items-start gap-4 mt-12">{arrayProj.slice(0, screen < 1440 ? 3 : 4).map((html) => html)}</div>
 			</motion.div>
 		</>
 	);

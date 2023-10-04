@@ -10,22 +10,22 @@ import Contacts from "./components/MainPage/Contacts";
 export default function Home() {
 	return (
 		<>
-			<div className="first flex">
-				<div className="group-1 flex-shrink-0">
-					<p className="title">
+			<div className="first flex items-center mt-16">
+				<div className="group-1 flex-shrink-0 w-3/5">
+					<p className="title text-[1.9vw] font-semibold">
 						NekooiTine is a <span className="text-main-pink">web designer</span> and
-						<br /> a <span className="text-main-pink">full-stack developer</span>.
+						<br /> <span className="text-main-pink">full-stack developer</span>
 					</p>
-					<p className="description mt-8 text-main-gray mb-6">
+					<p className="description text-[1.1vw] font-normal leading-[25px] mt-8 text-main-gray mb-6">
 						He crafts responsive websites where technologies
 						<br /> meet creativity
 					</p>
 					<Button url="/contacts" color="pink" name="Contact me!!" />
 				</div>
-				<div className="group-2 max-desktop:ml-48 max-laptop:ml-0 -mt-10 w-full relative">
+				<div className="group-2 -mt-10 w-1/2 relative">
 					<Image className="square-pink absolute z-0 top-24 max-laptop:top-40 -left-24" alt="deco" src="/main/square_pink.svg" width={155} height={155} />
-					<Image className="relative z-10 max-laptop:w-[300px]" alt="mypic" src="/main/pic.png" width={400} height={386} style={{ width: "auto", height: "auto" }} priority={true} />
-					<div className="current-work flex p-2 items-center border border-solid border-main-gray bg-main-background gap-main-gap">
+					<Image className="relative z-10 h-auto" alt="mypic" src="/main/pic.png" width={400} height={386} priority={true} />
+					<div className="w-auto flex p-2 items-center border border-solid border-main-gray bg-main-background gap-main-gap">
 						<div className="square w-4 h-4 flex-shrink-0 border border-solid border-main-pink bg-main-pink"></div>
 						<p className="content text-main-gray">
 							Currently working on <span className="text-white">Portfolio</span>

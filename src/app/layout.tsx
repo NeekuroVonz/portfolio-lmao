@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className={`${fira.className} max-desktop:w-[1280px] max-laptop:w-[1024px] max-tablet:w-[860px]`}>
+			<body className={`${fira.className} max-desktop:mx-[13vw] max-w-full delay-0`}>
 				<Header />
 				<main>{children}</main>
 				<Footer />
